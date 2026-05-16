@@ -1,4 +1,1 @@
-[[redirects]]
-  from = "/"
-  to = "/transcription_class_analysis_report.html"
-  status = 302
+# Netlify config — index.html is served automatically at /

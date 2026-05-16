@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboards</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --ink: #16213e;
+      --muted: #52607a;
+      --accent: #0b7285;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Avenir Next', 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #eef3ff 0%, #f8fbff 40%, #f6f7fb 100%);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 48px 20px; }
+    h1 { margin: 0 0 4px; font-size: 32px; }
+    .sub { color: var(--muted); margin: 0 0 32px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    a.card {
+      display: block;
+      background: var(--card);
+      border-radius: 14px;
+      padding: 20px 22px;
+      box-shadow: 0 6px 20px rgba(22,33,62,.07);
+      text-decoration: none;
+      color: var(--ink);
+      border-left: 5px solid var(--accent);
+      transition: box-shadow .15s, transform .15s;
+    }
+    a.card:hover { box-shadow: 0 10px 28px rgba(22,33,62,.13); transform: translateY(-2px); }
+    a.card h2 { margin: 0 0 6px; font-size: 17px; }
+    a.card p { margin: 0; font-size: 13px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Dashboards</h1>
+    <p class="sub">Click a dashboard to open it.</p>
+    <div class="grid">
+
+      <a class="card" href="transcription_class_analysis_report.html">
+        <h2>Transcription Growth by Class</h2>
+        <p>Pre/Post analysis across Arabic, Chinese, and Spanish — 55 paired students.</p>
+      </a>
+
+      <!-- Add new dashboard cards below this line -->
+
+    </div>
+  </div>
+</body>
+</html>
