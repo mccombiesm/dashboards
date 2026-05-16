@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Dashboard</title>
+  <style>
+    :root { --bg:#f6f7fb; --card:#ffffff; --ink:#16213e; --muted:#52607a; --accent:#2f9e44; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:'Avenir Next','Segoe UI',sans-serif; background:linear-gradient(180deg,#eef3ff 0%,#f8fbff 40%,#f6f7fb 100%); color:var(--ink); }
+    .container { max-width:900px; margin:0 auto; padding:40px 20px; }
+    .hero { background:var(--card); border-radius:18px; padding:28px; box-shadow:0 8px 28px rgba(22,33,62,.08); }
+    h1 { margin:0 0 8px; font-size:30px; }
+    .sub { color:var(--muted); margin:0; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:14px; margin-top:24px; }
+    .kpi { background:#f2fbf4; border-left:5px solid var(--accent); border-radius:12px; padding:14px 16px; }
+    .kpi h3 { margin:0; font-size:13px; color:var(--muted); font-weight:700; text-transform:uppercase; }
+    .kpi p { margin:6px 0 0; font-size:26px; font-weight:800; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <h1>Sample Dashboard</h1>
+      <p class="sub">A placeholder to test the index.</p>
+      <div class="grid">
+        <div class="kpi"><h3>Metric A</h3><p>142</p></div>
+        <div class="kpi"><h3>Metric B</h3><p>87%</p></div>
+        <div class="kpi"><h3>Metric C</h3><p>3.4x</p></div>
+        <div class="kpi"><h3>Metric D</h3><p>29</p></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
